@@ -1,5 +1,5 @@
 <!-- Products -->
-<section class="columns-3xs py-20 px-6">
+<!-- <section class="columns-3xs py-20 px-6">
     <div class="aspect-square pb-3">
       <div class="card bg-base-100 shadow-sm">
         <figure>
@@ -67,4 +67,192 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+
+<div class="bg-gray-100 font-sans">
+  <main class="pt-20 pb-24 px-4">
+    <!-- Ajusta pt (padding-top) y pb (padding-bottom) según la altura de tu navbar y dock -->
+
+    <section class="mb-8">
+      <!-- mb-8 = margin-bottom: 2rem -->
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">Pizzas 🍕</h2>
+      <!-- text-2xl mb-4 font-bold text-gray-800 -->
+      <!-- Contenedor Horizontal con Flexbox y Scroll -->
+      <div class="flex overflow-x-auto space-x-4 pb-4 no-scrollbar">
+        <!-- flex overflow-x-auto space-x-4 pb-4 -->
+        <!-- Tarjeta de Producto 1 -->
+        <article
+          class="flex-shrink-0 w-40 bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+        >
+          <!-- flex-shrink-0 w-40 bg-white rounded-lg shadow-md overflow-hidden flex flex-col -->
+          <img
+            src="https://placehold.co/160x100/FF5722/FFFFFF?text=Pizza+1"
+            alt="Pizza Pepperoni"
+            class="w-full h-24 object-cover"
+          />
+          <!-- w-full h-24 object-cover -->
+          <div class="p-3 flex flex-col flex-grow justify-between">
+            <!-- p-3 flex flex-col flex-grow justify-between -->
+            <h4 class="text-sm font-semibold mb-1 text-gray-700 truncate">
+              Pizza Pepperoni
+            </h4>
+            <!-- text-sm font-semibold mb-1 truncate -->
+            <p class="text-sm font-bold text-gray-900 mb-2">$25.000</p>
+            <!-- text-sm font-bold mb-2 -->
+            <button
+              class="mt-auto w-full bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-1.5 px-3 rounded transition-colors duration-150 ease-in-out"
+            >
+              <!-- mt-auto w-full bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-1.5 px-3 rounded -->
+              Agregar
+            </button>
+          </div>
+        </article>
+        <!-- Tarjeta de Producto 2 -->
+        <article
+          class="flex-shrink-0 w-40 bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+        >
+          <img
+            src="https://placehold.co/160x100/4CAF50/FFFFFF?text=Pizza+2"
+            alt="Pizza Hawaiana"
+            class="w-full h-24 object-cover"
+          />
+          <div class="p-3 flex flex-col flex-grow justify-between">
+            <h4 class="text-sm font-semibold mb-1 text-gray-700 truncate">
+              Pizza Hawaiana
+            </h4>
+            <p class="text-sm font-bold text-gray-900 mb-2">$28.000</p>
+            <button
+              class="mt-auto w-full bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-1.5 px-3 rounded transition-colors duration-150 ease-in-out"
+            >
+              Agregar
+            </button>
+          </div>
+        </article>
+        <!-- Tarjeta de Producto 3 -->
+        <article
+          class="flex-shrink-0 w-40 bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+        >
+          <img
+            src="https://placehold.co/160x100/2196F3/FFFFFF?text=Pizza+3"
+            alt="Pizza Vegetariana"
+            class="w-full h-24 object-cover"
+          />
+          <div class="p-3 flex flex-col flex-grow justify-between">
+            <h4 class="text-sm font-semibold mb-1 text-gray-700 truncate">
+              Pizza Vegetariana
+            </h4>
+            <p class="text-sm font-bold text-gray-900 mb-2">$26.000</p>
+            <button
+              class="mt-auto w-full bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-1.5 px-3 rounded transition-colors duration-150 ease-in-out"
+            >
+              Agregar
+            </button>
+          </div>
+        </article>
+        <!-- ... más productos -->
+      </div>
+    </section>
+
+    <!-- Sección de Categoría 2: Hamburguesas -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">Hamburguesas 🍔</h2>
+      <div class="flex overflow-x-auto space-x-4 pb-4 no-scrollbar">
+        <!-- Tarjeta de Producto 1 -->
+        <article
+          class="flex-shrink-0 w-40 bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+        >
+          <img
+            src="https://placehold.co/160x100/FFC107/000000?text=Burger+1"
+            alt="Hamburguesa Clásica"
+            class="w-full h-24 object-cover"
+          />
+          <div class="p-3 flex flex-col flex-grow justify-between">
+            <h4 class="text-sm font-semibold mb-1 text-gray-700 truncate">
+              Burger Clásica
+            </h4>
+            <p class="text-sm font-bold text-gray-900 mb-2">$18.000</p>
+            <button
+              class="mt-auto w-full bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-1.5 px-3 rounded transition-colors duration-150 ease-in-out"
+            >
+              Agregar
+            </button>
+          </div>
+        </article>
+        <!-- Tarjeta de Producto 2 -->
+        <article
+          class="flex-shrink-0 w-40 bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+        >
+          <img
+            src="https://placehold.co/160x100/9C27B0/FFFFFF?text=Burger+2"
+            alt="Hamburguesa Doble"
+            class="w-full h-24 object-cover"
+          />
+          <div class="p-3 flex flex-col flex-grow justify-between">
+            <h4 class="text-sm font-semibold mb-1 text-gray-700 truncate">
+              Burger Doble Carne
+            </h4>
+            <p class="text-sm font-bold text-gray-900 mb-2">$24.000</p>
+            <button
+              class="mt-auto w-full bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-1.5 px-3 rounded transition-colors duration-150 ease-in-out"
+            >
+              Agregar
+            </button>
+          </div>
+        </article>
+        <!-- ... más productos -->
+      </div>
+    </section>
+
+    <!-- Sección de Categoría 3: Bebidas -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">Bebidas 🥤</h2>
+      <div class="flex overflow-x-auto space-x-4 pb-4 no-scrollbar">
+        <!-- Tarjeta de Producto 1 -->
+        <article
+          class="flex-shrink-0 w-40 bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+        >
+          <img
+            src="https://placehold.co/160x100/00BCD4/FFFFFF?text=Bebida+1"
+            alt="Coca-Cola"
+            class="w-full h-24 object-cover"
+          />
+          <div class="p-3 flex flex-col flex-grow justify-between">
+            <h4 class="text-sm font-semibold mb-1 text-gray-700 truncate">
+              Coca-Cola 500ml
+            </h4>
+            <p class="text-sm font-bold text-gray-900 mb-2">$3.000</p>
+            <button
+              class="mt-auto w-full bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-1.5 px-3 rounded transition-colors duration-150 ease-in-out"
+            >
+              Agregar
+            </button>
+          </div>
+        </article>
+        <!-- Tarjeta de Producto 2 -->
+        <article
+          class="flex-shrink-0 w-40 bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+        >
+          <img
+            src="https://placehold.co/160x100/8BC34A/FFFFFF?text=Bebida+2"
+            alt="Jugo de Naranja"
+            class="w-full h-24 object-cover"
+          />
+          <div class="p-3 flex flex-col flex-grow justify-between">
+            <h4 class="text-sm font-semibold mb-1 text-gray-700 truncate">
+              Jugo de Naranja
+            </h4>
+            <p class="text-sm font-bold text-gray-900 mb-2">$5.000</p>
+            <button
+              class="mt-auto w-full bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-1.5 px-3 rounded transition-colors duration-150 ease-in-out"
+            >
+              Agregar
+            </button>
+          </div>
+        </article>
+        <!-- ... más productos -->
+      </div>
+    </section>
+
+    <!-- Añade más secciones de categorías aquí -->
+  </main>
+</div>
