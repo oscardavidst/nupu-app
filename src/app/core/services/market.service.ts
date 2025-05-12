@@ -182,6 +182,49 @@ const MARKET: Market = {
         },
       ],
     },
+    {
+      name: 'Combos',
+      description: 'Pizzas dulces',
+      src: 'https://example.com/clothing.jpg',
+      products: [
+        {
+          name: 'Combo Duo Mid',
+          description:
+            'Masa de pizza delgada con nuestra mantequilla de maní, chispas de chocolate y salsa de chocolate.',
+          src: 'https://example.com/tshirt.jpg',
+          options: [
+            {
+              description: 'default',
+              price: 15000,
+            },
+          ],
+        },
+        {
+          name: 'Dulce Tentación',
+          description:
+            'Masa de pizza delgada con crema choco-avellana, frutillas y chispas de chocolate.',
+          src: 'https://example.com/jeans.jpg',
+          options: [
+            {
+              description: 'default',
+              price: 5000,
+            },
+          ],
+        },
+        {
+          name: 'Doñihue Style',
+          description:
+            'Masa de pizza delgada con manjar, plátano & disco merengue casero.',
+          src: 'https://example.com/jeans.jpg',
+          options: [
+            {
+              description: 'default',
+              price: 5000,
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
 

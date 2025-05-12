@@ -4,10 +4,16 @@
 @plugin "daisyui/theme" {
   name: "garden";
   default: true;
-  --color-primary: oklch(0.61 0.2449 4.31);
-  --color-primary-content: oklch(0.69 0.2095 7.03);
-  --color-secondary: oklch(0.66 0.1753 151.36);
-  --color-secondary-content: oklch(0.73 0.1449 144.38);
-  --color-base-100: oklch(0.96 0.0358 89.44);
-  --color-neutral-content: oklch(0.96 0.0358 89.44);
+  --color-base-100: oklch(0.96 0.0324 93.52);
+  --color-neutral-content: oklch(0.7 0.0324 93.52);
+
+  --color-secondary: oklch(0.74 0.1234 140.83);
+  --color-secondary-content: oklch(0.66 0.1502 149.91);
+
+  --color-primary: oklch(0.59 0.215 2.4);
+  --color-primary-content: oklch(0.62 0.1416 357.7);
+
+  --color-accent: oklch(0.77 0.1162 40.5);
+  --color-info: oklch(0.68 0.1769 5.54);
+  --color-neutral: oklch(0.23 0.0595 323.02);
 }

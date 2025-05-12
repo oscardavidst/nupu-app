@@ -2,68 +2,57 @@
   <main class="pb-24 px-4">
     <section>
       @for (category of marketResource.value()?.categories; track $index) {
-      <h2 class="text-2xl font-bold mb-4 text-gray-800">{{ category.name }}</h2>
-      <!-- <pre>{{ marketResource.value() | json }}</pre> -->
+      <h2 class="font-bold mb-4 text-gray-800">{{ category.name }}</h2>
       <!-- Contenedor Horizontal con Flexbox y Scroll -->
-      <div class="flex overflow-x-auto space-x-4 pb-4 no-scrollbar">
+      <div class="flex overflow-x-auto space-x-3 pb-3 mb-5 no-scrollbar">
         <!-- Tarjeta de Producto -->
         @for (product of category.products; track $index) {
-        <!-- <article
-          class="flex-shrink-0 w-40 bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
-        >
-          <img
-            src="https://placehold.co/160x100/FF5722/FFFFFF?text=IMG+{{
-              $index + 1
-            }}"
-            alt="Pizza Pepperoni"
-            class="w-full h-24 object-cover"
-          />
-          <div class="p-3 flex flex-col flex-grow justify-between">
-            <h4 class="text-md font-semibold mb-3 text-gray-700">
-              {{ product.name }}
-            </h4>
-            @for (option of product.options; track $index) {
-            <div class="inline">
-              <label>{{ option.description }}:</label>
-              <label class="text-sm font-bold text-gray-900 mb-2">
-                {{ option.price | currency : "$" : "symbol-narrow" : "4.0-2" }}
-              </label>
-            </div>
-            }
-            <button
-              class="btn btn-primary bg-primary-content border-primary-content btn-sm text-base-100"
-            >
-              Agregar
-            </button>
-          </div>
-        </article> -->
-
-        <div class="card card-xs w-min-120 shadow-md">
-          <figure>
+        <div class="card card-xs min-w-40 shadow-md bg-neutral-content/20">
+          <figure class="m-1">
             <img
-              src="https://placehold.co/160x100/FF5722/FFFFFF?text=IMG+{{
-                $index + 1
-              }}"
+              src="https://static.vecteezy.com/system/resources/thumbnails/045/383/391/small_2x/a-cheesy-delicious-pizza-with-tasty-pepperoni-on-a-transparent-background-png.png"
               alt="Food"
             />
           </figure>
           <div class="card-body">
             <h2 class="card-title">
-              {{ product.name }}
-              <div class="badge badge-secondary">nuevo</div>
+              {{ product.name | uppercase }}
+              <!-- <div class="badge badge-secondary">new</div> -->
             </h2>
 
             @for (option of product.options; track $index) {
             <div class="inline">
+              @if (option.description !== 'default') {
               <label>{{ option.description }}:</label>
-              <label class="text-sm font-bold text-gray-900 mb-2">
+              }
+              <label class="text-xs font-bold text-gray-900 mb-2">
                 {{ option.price | currency : "$" : "symbol-narrow" : "4.0-2" }}
               </label>
             </div>
             }
             <div class="card-actions justify-end">
-              <button class="btn btn-primary-outline">Detalle</button>
-              <button class="btn btn-primary-outline">Agregar</button>
+              <!-- <div class="tooltip" data-tip="product.description">
+                <button
+                  class="btn btn-xs bg-primary-content border-primary-content"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8"
+                    />
+                  </svg>
+                </button>
+              </div> -->
+              <button
+                class="btn btn-xs bg-primary-content border-primary-content"
+              >
+                Agregar
+              </button>
             </div>
           </div>
         </div>
